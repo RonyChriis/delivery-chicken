@@ -1,0 +1,55 @@
+# docker-compose.yml
+
+version: '3.8'
+
+services:
+  # Servicio de la Base de Datos PostgreSQL
+  db:
+    image: postgres:15-alpine # Usamos una versión ligera y reciente de PostgreSQL
+    container_name: villa-chicken-db
+    restart: always
+    environment:
+      # Estas variables de entorno se usan para crear la base de datos y el usuario inicial.
+      # Deben coincidir con las de tu archivo .env
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+    ports:
+      # Mapea el puerto 5432 del contenedor al puerto 5432 de tu máquina.
+      # Así podrás conectarte a la BD con herramientas como DBeaver o pgAdmin.
+      - '5432:5432'
+    volumes:
+      # Esto es MUY IMPORTANTE. Crea un volumen llamado 'postgres-data' para persistir
+      # los datos de la base de datos. Si no haces esto, ¡perderás todos tus datos
+      # cada vez que detengas el contenedor!
+      - postgres-data:/var/lib/postgresql/data
+
+  # Servicio de tu Aplicación NestJS
+  backend:
+    container_name: villa-chicken-api
+    build:
+      context: . # Le dice a Docker que construya la imagen desde el directorio actual
+      dockerfile: Dockerfile # El nombre del archivo que contiene las instrucciones de construcción
+    ports:
+      # Mapea el puerto 3000 del contenedor al puerto 3000 de tu máquina.
+      - '3000:3000'
+    environment:
+      # Pasa todas las variables de tu archivo .env al contenedor.
+      # NestJS las usará para conectarse a la base de datos.
+      - DB_HOST=db # ¡MUY IMPORTANTE! El host ahora es el nombre del servicio 'db'.
+      - DB_PORT=5432
+      - DB_USERNAME=${DB_USERNAME}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_NAME=${DB_NAME}
+    volumes:
+      # Monta la carpeta 'src' de tu máquina en la carpeta '/app/src' del contenedor.
+      # Esto permite el "hot-reloading": cuando cambias un archivo en tu máquina,
+      # se refleja automáticamente en el contenedor sin necesidad de reconstruir la imagen.
+      - ./src:/app/src
+    depends_on:
+      # Asegura que el servicio 'db' se inicie antes que el 'backend'.
+      - db
+
+# Define el volumen que creamos para la base de datos
+volumes:
+  postgres-data:

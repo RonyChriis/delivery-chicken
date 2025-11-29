@@ -1,0 +1,144 @@
+# ==========================================
+# GITIGNORE RAÍZ - VILLA CHICKEN PROJECT
+# ==========================================
+
+# ==========================================
+# ARCHIVOS COMPRIMIDOS
+# ==========================================
+*.rar
+*.zip
+*.tar.gz
+*.7z
+
+# ==========================================
+# BACKEND - ARCHIVOS SENSIBLES
+# ==========================================
+
+# Variables de entorno
+backend/.env
+backend/.env.local
+backend/.env.*.local
+
+# Credenciales de Firebase
+backend/*-firebase-adminsdk-*.json
+backend/crud2-231c6-firebase-adminsdk-fbsvc-01a904f940.json
+backend/chickenfront-firebase-adminsdk-fbsvc-616782a629.json
+
+# Node modules
+backend/node_modules/
+
+# Build
+backend/dist/
+backend/build/
+
+# Logs
+backend/*.log
+backend/npm-debug.log*
+backend/yarn-debug.log*
+backend/yarn-error.log*
+backend/lerna-debug.log*
+
+# Archivos de sistema
+backend/.DS_Store
+backend/Thumbs.db
+
+# IDE
+backend/.vscode/
+backend/.idea/
+backend/*.swp
+backend/*.swo
+backend/*~
+
+# Documentación temporal
+backend/DIAGNOSTICO*.md
+backend/IMPLEMENTACION*.md
+
+# ==========================================
+# FRONTEND - ARCHIVOS SENSIBLES
+# ==========================================
+
+# Variables de entorno
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+
+# Firebase config (Android)
+frontend/android/app/google-services.json
+
+# Firebase config (iOS)
+frontend/ios/GoogleService-Info.plist
+
+# Node modules
+frontend/node_modules/
+
+# Build outputs
+frontend/build/
+frontend/dist/
+
+# Android
+frontend/android/app/build/
+frontend/android/.gradle/
+frontend/android/local.properties
+frontend/android/*.iml
+frontend/android/.idea/
+frontend/android/*.hprof
+frontend/android/.cxx/
+frontend/android/*.keystore
+!frontend/android/app/debug.keystore
+
+# iOS
+frontend/ios/Pods/
+frontend/ios/build/
+frontend/ios/*.xcworkspace
+!frontend/ios/*.xcworkspace/contents.xcworkspacedata
+frontend/ios/*.xcuserstate
+frontend/ios/DerivedData/
+
+# Logs
+frontend/*.log
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# Metro bundler
+frontend/.metro-health-check*
+
+# Testing
+frontend/coverage/
+
+# Archivos de sistema
+frontend/.DS_Store
+frontend/Thumbs.db
+
+# IDE
+frontend/.vscode/
+frontend/.idea/
+
+# Documentación temporal
+frontend/IMPLEMENTACION*.md
+frontend/SPLASH*.md
+
+# ==========================================
+# ARCHIVOS GENERALES DEL PROYECTO
+# ==========================================
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Logs generales
+*.log
+
+# Archivos temporales
+*.tmp
+*.temp
+*.bak
+*.cache
+
+# ==========================================
+# GIT
+# ==========================================
+.git/
