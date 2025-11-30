@@ -16,4 +16,4 @@
 // Para Android Studio Emulator: usa 10.0.2.2
 // Para BlueStacks o dispositivo físico: usa tu IP local
 
-export const API_URL = 'http://192.168.0.102:3000';
+export const API_URL = 'http://192.0.0.1:3000';
