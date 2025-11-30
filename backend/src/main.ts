@@ -34,6 +34,6 @@ async function bootstrap() {
   await app.listen(port, '0.0.0.0');
   
   console.log(`🚀 Application is running on: http://0.0.0.0:${port}`);
-  console.log(`🌐 Network access: http://192.168.0.102:${port}`);
+  console.log(`🌐 Network access: http://192.0.0.1:${port}`);
 }
 bootstrap();
