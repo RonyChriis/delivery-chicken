@@ -10,8 +10,8 @@ async function bootstrap() {
   app.enableCors({
     origin: [
       'http://localhost:19006',      // Metro Bundler
-      'http://192.168.0.102:19006',  // Tu IP con Metro
-      'http://192.168.0.102:3000',   // Tu backend
+      'http://192.0.0.1:19006',  // Tu IP con Metro
+      'http://192.0.0.1:3000',   // Tu backend
       'http://localhost:3000',       // Localhost
       'http://localhost:8081',       // React Native default
       /\.yourdomain\.com$/,          // Dominio producción
