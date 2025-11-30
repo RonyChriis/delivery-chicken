@@ -52,6 +52,7 @@ backend/*~
 # Documentación temporal
 backend/DIAGNOSTICO*.md
 backend/IMPLEMENTACION*.md
+DIAGNOSTICO_COMPLETO_APLICATIVO*.md
 
 # ==========================================
 # FRONTEND - ARCHIVOS SENSIBLES
