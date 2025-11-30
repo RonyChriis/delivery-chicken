@@ -1,0 +1,12 @@
+C:/moviles/villa-chicken/frontend/android/app/.cxx/Debug/b1w92ih2/x86/CMakeFiles/appmodules.dir
+C:/moviles/villa-chicken/frontend/android/app/.cxx/Debug/b1w92ih2/x86/CMakeFiles/edit_cache.dir
+C:/moviles/villa-chicken/frontend/android/app/.cxx/Debug/b1w92ih2/x86/CMakeFiles/rebuild_cache.dir
+C:/moviles/villa-chicken/frontend/android/app/.cxx/Debug/b1w92ih2/x86/safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir
+C:/moviles/villa-chicken/frontend/android/app/.cxx/Debug/b1w92ih2/x86/safeareacontext_autolinked_build/CMakeFiles/edit_cache.dir
+C:/moviles/villa-chicken/frontend/android/app/.cxx/Debug/b1w92ih2/x86/safeareacontext_autolinked_build/CMakeFiles/rebuild_cache.dir
+C:/moviles/villa-chicken/frontend/android/app/.cxx/Debug/b1w92ih2/x86/rnscreens_autolinked_build/CMakeFiles/react_codegen_rnscreens.dir
+C:/moviles/villa-chicken/frontend/android/app/.cxx/Debug/b1w92ih2/x86/rnscreens_autolinked_build/CMakeFiles/edit_cache.dir
+C:/moviles/villa-chicken/frontend/android/app/.cxx/Debug/b1w92ih2/x86/rnscreens_autolinked_build/CMakeFiles/rebuild_cache.dir
+C:/moviles/villa-chicken/frontend/android/app/.cxx/Debug/b1w92ih2/x86/RNVectorIconsSpec_autolinked_build/CMakeFiles/react_codegen_RNVectorIconsSpec.dir
+C:/moviles/villa-chicken/frontend/android/app/.cxx/Debug/b1w92ih2/x86/RNVectorIconsSpec_autolinked_build/CMakeFiles/edit_cache.dir
+C:/moviles/villa-chicken/frontend/android/app/.cxx/Debug/b1w92ih2/x86/RNVectorIconsSpec_autolinked_build/CMakeFiles/rebuild_cache.dir
